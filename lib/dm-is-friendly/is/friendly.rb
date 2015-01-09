@@ -23,7 +23,6 @@ module DataMapper
           end
 
           property :created_at, DateTime
-          property :update_at, DateTime
           
           belongs_to reference_model_key, reference_model, :key => true
           belongs_to :friend, :model => reference_model, :child_key => [:friend_id], :key => true
